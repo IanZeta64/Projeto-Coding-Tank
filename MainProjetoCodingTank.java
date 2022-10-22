@@ -40,7 +40,7 @@ public class MainProjetoCodingTank {
                     System.out.printf("Valor convertido de Celsius para fahrenheit: %.2f ºF%n", celsiusParaFahrenheit(temp));
                     somaSaida += celsiusParaFahrenheit(temp);
                 } else {
-                    System.out.println("Entrada invalida");
+                    System.out.println("Impossivel converter temperaturas iguais! Reinicie o programa."); return;
                 }
                 break;
             case 2:
@@ -56,7 +56,7 @@ public class MainProjetoCodingTank {
                     somaSaida += fahrenheitParaKelvin(temp);
 
                 } else {
-                    System.out.println("Entrada invalida");
+                    System.out.println("Impossivel converter temperaturas iguais! Reinicie o programa."); return;
                 }
                 break;
             case 3:
@@ -71,9 +71,8 @@ public class MainProjetoCodingTank {
                     System.out.printf("Valor convertido de Kelvin para Fahrenheit: %.2f ºK%n", kelvinParaFahrenheit(temp));
                     somaSaida += kelvinParaFahrenheit(temp);
                 } else {
-                    System.out.println("Entrada invalida");
+                    System.out.println("Impossivel converter temperaturas iguais! Reinicie o programa."); return;
                 }
-                break;
         }
         }
         }
